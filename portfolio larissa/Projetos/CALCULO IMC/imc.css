@@ -1,0 +1,14 @@
+body{
+    background-color: purple;
+}
+.caixatext{
+    color: white;
+    text-align: center;
+    width: 1540px;
+    height: 100px;
+
+}
+h1{
+    text-align: center;
+    color: white;
+}

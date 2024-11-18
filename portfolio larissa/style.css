@@ -1,0 +1,465 @@
+/*ESTILO GERAL*/
+body{
+    background-color:white;
+    height: 100px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    font-family: "Poppins", sans-serif;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex; /*alinha o texto e a imagem lado a lado */
+}
+
+/* CABEÇALHO */
+
+header{
+    padding: 30px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+
+header a {
+    color: #4e0a64;
+    text-decoration: none;
+    display: inline-block;
+   
+}
+
+header a:hover{
+ color: #da6ff1;
+ transform: scale(1.40);
+}
+
+header nav ul{
+    list-style-type:none;
+}
+
+header nav ul li{
+ display: inline-block;
+ padding: 0 40px;
+}
+
+header .contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(196, 111, 245);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+header .contato button:hover, form .btn-enviar input:hover{
+  box-shadow: 0px 0px 10px rgb(236, 92, 249);
+}
+
+/*ESTILO DO TOPO DO SITE */
+
+main .imgtopo img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+section.toposite{
+    padding: 40px 4%;
+}
+section.toposite .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 45px;  /*ESPAÇO ENTRE O TEXTO E A IMAGEM*/
+}
+.toposite h1{
+    color: #da6ff1;
+    font-size: 35px;
+}
+.toposite h1 span{
+    color: #fe64c6;
+}
+.toposite .txt p{
+    color: #4e0a64;
+    font-size: 20px;
+}
+.toposite .imgtopo img{
+
+ position: relative;
+ animation: flutuar 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes flutuar{
+    0%{
+        top:0px;
+    }
+    100%{
+        top: 30px;
+    }
+}
+/*ESPAÇO SOBRE MIM*/
+.section.sobremim{
+    padding: 40px 4%;
+}
+
+.section.sobremim .flex{
+    align-items: center;
+    gap: 60px; 
+   
+}
+main .img-sobre img{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+}
+
+
+.sobremim .txt-sobre{
+    color: #4e0a64;
+    margin-left: 100px;
+}
+.sobremim .txt-sobre h2{
+    color: #da6ff1;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.sobremim .txt-sobre h2 span{
+    color: #fe64c6;
+    
+}
+.sobremim .txt-sobre p{
+    font-size: 20px;
+    text-align: justify;
+}
+.sobremim .txt-sobre .btn-social button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color:#fe64c6 ;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+/*HABILIDADES*/
+.skills{
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 150px;
+   margin-left: 25rem;
+   width: 725px;
+   padding: 50px;
+   border-radius: 20px;
+   background-color:#da6ff1 ;
+   box-shadow: 0 15px 20px #a709ca ;
+   
+}
+.habilidades h1{
+    text-align: center;
+    font-size: 30px;
+    color: #4e0a64;
+}
+.habilidades ul{
+ list-style: none;
+}
+.habilidades ul li{
+    margin: 20px 0;
+    color: #4e0a64;
+}
+.skills .barras{
+    background-color: white;
+    display: block;
+    height: 30px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+    width: 500px;
+}
+.barras > span{
+    height: 30px;
+    background: linear-gradient(to right,#fe64c6,#f72fad);
+    position: absolute;
+}
+.html{
+    width: 85%;
+    animation: html 7s;
+}
+.c{
+    width: 80%;
+    animation: c 7s;
+}
+.css{
+    width: 65%;
+    animation: css 7s;
+}
+.javascript{
+    width: 55%;
+    animation: javascript 7s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+@keyframes c{
+    0%{
+        width: 0;
+
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:55% ;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+/*CARROSEL*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+.txt{
+   text-align: center;
+   margin-bottom: 40px;
+    font-size: 50px;
+    color: white;
+}
+   
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+.projetos{
+   
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#db51fa, #a709ca);
+}
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 60px 35px ;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+.card-list .card-item{
+    list-style: none;
+
+}
+
+.card-list .card-item .card-link{
+    user-select: none;
+    display: block;
+    background:#fe64c6;
+    padding: 18px;
+    border-radius: 12px ;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0,0,0, 0.05);
+    transition: 0.2s ease;
+}
+.card-list .card-item .card-link:active{
+    cursor: grabbing;
+
+}
+.card-list .card-item .card-link:hover{
+    border-color: #f72fad;
+}
+
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+
+       
+}
+.card-list .card-link .badge{
+    color: #4e0a64;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background:#f72fad ;
+    width: fit-content;
+    border-radius:25px ;
+}
+.card-list .card-link .badge.calculadora{
+    color:  #a709ca ;
+    background:#f72fad  ;
+
+}
+.card-list .card-link .badge.calculo{
+    color:  #4e0a64 ;
+    background:#f72fad  ;
+
+}
+.card-list .card-link .badge.form{
+    color: white ;
+    background:#f72fad  ;
+
+}
+.card-list .card-link .badge.control{
+    color: red ;
+    background:#f72fad  ;
+
+}
+.card-list .card-link .badge.fale{
+    color:  rgb(83, 255, 83) ;
+    background:#f72fad  ;
+
+}
+.card-list .card-link .badge.promo{
+    color: black ;
+    background:#f72fad  ;
+
+}
+.card-list .card-link .titulocard{
+ font-size: 1.19rem;
+ color:  #4e0a64;
+ font-weight: 600;
+}
+.card-list .card-link .card-button{
+    height: 35px;
+    width: 35px;
+    color:  #4e0a64;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    border: 2px solid  #4e0a64;
+    transform: rotate(0deg);
+    transition: 0.4s ease;
+}
+.card-list .card-link:hover .card-button{
+    color: #a709ca;
+    background:  #4e0a64;
+}
+.card-wrapper .swiper-pagination-bullet{
+    height: 10px;
+    width: 10px;
+    opacity: 0.5;
+    background:#f72fad ;
+}
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+}
+.card-wrapper .swiper-slide-button{
+    color:#f72fad ;
+    margin-top: -35px;
+}
+@media screen and (max-width: 768px) {
+    .card-wrapper{
+        margin: 0 10px 25px ;
+    }
+    .card-wrapper .swiper-slide-button{
+        display: none;
+    }
+}
+/*FORMULARIO CONTATO*/
+section.contato{
+    padding: 80px 4%;
+}
+section.contato{
+    align-items: center;
+    justify-content: center;
+}
+section.contato  .texto h2{
+    color: #da6ff1;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+   
+}
+.texto h2 span{
+    color: #fe64c6;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+form input, form textarea{
+    width: 100%;
+    background-color: #a709ca;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+form input::placeholder{
+    color: #fe64c6;
+}
+form textarea::placeholder{
+    color: #fe64c6;
+}
+form textarea{
+   resize: none;
+    
+}
+form .btn-enviar input{
+    margin-top: 15px
+   
+}
+   
+   
+form .btn-enviar input[type=submit]{
+    background-color: #f752ba;
+    color: #a709ca;
+    height: 50px;
+    cursor: pointer;
+    transition: .2s;
+
+}
+/*ESTILO DO RODA PÉ*/
+
+footer {
+    padding: 60px 4%;
+    box-shadow: 0px 0px 40px 10px #db51fa;
+}
+footer .line-footer p i{
+    color: #f752ba;
+    font-size: 22px;
+}
+footer .line-footer p a{
+    color: #f752ba;
+    text-decoration: none;
+}

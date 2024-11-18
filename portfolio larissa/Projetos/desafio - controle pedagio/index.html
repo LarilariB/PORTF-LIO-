@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de pedagio</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="img/istockphoto-1475203176-612x612.jpg" alt="">
+
+    <div class="td">
+        <label for=""> <p class="placas">placa do carro:</p>
+            <input type="text" id="placa" class="placa">
+        </label>
+        
+        <label for=""> <p class="h">hora partida</p>
+            <input type="number" id="hpartida" class="hp">
+        </label>
+
+        <label for=""> <p class="m"> minuto partida:</p>
+            <input type="number" id="minpartida" class="mp">
+        </label>
+
+        <label for=""> <p class="hch">hora chegada:</p>
+            <input type="number" id="hchegada" class="hc">
+        </label>
+
+        <label for=""> <p class="mch">minuto chegada:</p> minchegada
+            <input type="number" id="minchegada" class="mc">
+        </label>
+
+        <button onclick="calcula()" class="b1">Calcular</button>
+        
+        <div class="p1">
+            <p id="mensagem">Ticket de cobrança</p>
+        </div>
+
+        <button onclick="fim()" class="b2">Finalizar</button>
+        
+        <div class="p2" >
+            <p id="mensagem2" class="p02">Relatório</p>
+        </div>
+    </div>
+</body>
+</html>

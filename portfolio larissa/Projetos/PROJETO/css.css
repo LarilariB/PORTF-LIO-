@@ -1,0 +1,130 @@
+header{
+    background-image:linear-gradient( to bottom, rgb(102, 180, 78), green, rgb(21, 70, 1), rgb(3, 58, 19) );
+    text-align: center;
+    font-size: 25px;
+}
+body{
+    background-color: lightgreen;
+}
+nav{
+    text-align: left;
+    font-size: 15px;
+}
+main{
+    display: flex;
+    justify-content:center ;
+    align-items: baseline;
+
+    padding: 10px;
+    background-color: white;
+    width: 1000px;
+    height: 2500px;
+    margin-left:  450px; ;
+}
+
+@font-face{
+    font-family: idroid ;
+    src: url(fontes/idroid.otf)
+}
+.titulo{
+    font-family:idroid ;
+}
+.sub{
+    font-family:idroid ;
+    color: green;
+    font-size: 40px;
+    text-align: center;
+}
+p{
+    font-size: 25px ;
+    text-align: center;
+}
+h4{
+    background-color:rgb(166, 248, 141) ;
+    font-family:idroid;
+    color: green;
+    font-size: 30px;
+}
+.picture{
+
+   display: flex;
+   margin-left: 100px;
+   margin-right: 25px;
+   width: 250px;
+   height: 250px; 
+   align-items: center;
+   src:url(imagens/dan-droids-pq.png)center;
+   src:url(imagens/irina-blok.jpg)center;
+   src:url(imagens/bugdroid.png)center;
+}
+.picture2{
+
+    display: flex;
+    margin-left: 360px;
+    margin-right: 20px;
+    width: 200px;
+    
+    src:url(imagens/bugdroid.png)center;
+}
+iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.tab{
+    display: block;
+    
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: lightgreen;
+    width: 800px;
+    height: 300px;
+    margin-left: 90px;
+
+}
+.p2{
+    background-color:rgb(45, 115, 4);
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-left: auto;
+    border-radius:10px;
+    margin-bottom: 1px;
+    margin-right:auto ;
+    width: 800px; 
+    height: 30px;
+    color: white;
+    text-align:left;
+    font-size: 20px;
+   
+}
+.pr{
+    font-size: medium;
+    text-align: center;
+    color: black;
+}
+.lista1{
+    position: absolute;
+    text-transform: uppercase;
+    font-size: small;
+    text-align: left;
+    color: black;
+    text-decoration: none;
+ }
+ .lista2{
+    margin-left: 300px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: small;
+    text-align: left;
+    color: black;
+    text-decoration: none;
+ }
+.rodapé{
+    background-color: green;
+    height: 30px;
+ }
+
+
